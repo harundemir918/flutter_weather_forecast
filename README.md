@@ -1,16 +1,31 @@
-# flutter_weather_forecast
+# Weather Forecast
 
-A new Flutter project.
+Weather Forecast is a Flutter app for getting weather forecast based on region/country/city.
 
-## Getting Started
+## Used Packages
 
-This project is a starting point for a Flutter application.
+- [flutter_bloc](https://pub.dev/packages/flutter_bloc) (For State Management)
+- [auto_route](https://pub.dev/packages/auto_route) (To Navigate Between Pages)
+- [auto_route_generator](https://pub.dev/packages/auto_route_generator) (To Generate Auto Router Boilerplate Code)
+- [build_runner](https://pub.dev/packages/build_runner) (To Generate Boilerplate Code)
+- [dio](https://pub.dev/packages/dio) (To Fetch Data)
 
-A few resources to get you started if this is your first Flutter project:
+## Used APIs
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+- [World Country API](https://rapidapi.com/herihermwn/api/world-country) (Listing regions/countries/cities)
+- [WeatherAPI.com API](https://rapidapi.com/weatherapi/api/weatherapi-com/) (Getting weather info)
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## Pages
+
+- Home Page
+    - Get forecast data with search bar using city name
+    - Select the region listed below
+
+- Country Listing Page
+    - Select country with region data that comes from Home Page and get cities belongs to the selected country
+
+- City Listing Page
+    - Select city with country data that comes from Country Listing Page and get forecast data of the selected city
+
+- Forecast Page
+    - View weather forecast of the selected city.
